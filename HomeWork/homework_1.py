@@ -49,3 +49,4 @@ print(f'rectangle perimeter is: {rectangle.perimeter()}')
 print(f'rectangle is square: {rectangle.is_square()}')
 rectangle.resize(15,25)
 print(f'after resize: rectangle width = {rectangle.width}, rectangle height = {rectangle.height}')
+
