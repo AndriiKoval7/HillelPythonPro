@@ -39,6 +39,7 @@ class Price:
     def __str__(self):
         return f"Price is {round(self.__price, 2)}{self.__hint}"
         # округлено костильом, краще б мати спеціальний формат для коштів, бо розрахунки не точні. Може підкажете як правильно)
+        # import locale ?
 
 
 p1 = Price("123.97987")
