@@ -16,12 +16,14 @@ import os
 BOOKS_FILE = 'books.json'
 
 def load_books():
+    """Load books from file"""
     if os.path.exists(BOOKS_FILE):
         with open(BOOKS_FILE, 'r', encoding='utf-8') as file:
             return json.load(file)
     return []
 
 def show_books():
+    """Show books for user after loading"""
     books = load_books()
     if not books:
         print(f'No books found')
@@ -32,10 +34,12 @@ def show_books():
         print(f'{ind + 1}) {book["book_name"]}, author: {book["author"]}, {status}')
 
 def save_book(book):
+    """Save new book"""
     with open(BOOKS_FILE, 'w', encoding='utf-8') as file:
         json.dump(book, file, ensure_ascii=False, indent=4)
 
 def add_book(book_name, author, year, in_stock):
+    """Add all new book parameters for save"""
     books = load_books()
     books.append({
         "book_name": book_name,
