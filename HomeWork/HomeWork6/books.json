@@ -1,0 +1,26 @@
+[
+    {
+        "book_name": "book_1",
+        "author": "author_1",
+        "year": 2015,
+        "in stock": true
+    },
+    {
+        "book_name": "book_2",
+        "author": "author_2",
+        "year": 2018,
+        "in stock": false
+    },
+    {
+        "book_name": "book_3",
+        "author": "author_3",
+        "year": 2018,
+        "in stock": false
+    },
+    {
+        "book_name": "book_n",
+        "author": "author_n",
+        "year": 2017,
+        "in stock": true
+    }
+]
