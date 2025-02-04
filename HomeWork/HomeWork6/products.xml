@@ -1,0 +1,22 @@
+<products>
+    <product><name>Coffe</name><price>47</price><quantity>30</quantity></product><product>
+        <name>Milk</name>
+        <price>25</price>
+        <quantity>30</quantity>
+    </product>
+    <product>
+        <name>Bread</name>
+        <price>10</price>
+        <quantity>100</quantity>
+    </product>
+    <product>
+        <name>Milk</name>
+        <price>25</price>
+        <quantity>30</quantity>
+    </product>
+    <product>
+        <name>Olive</name>
+        <price>35</price>
+        <quantity>70</quantity>
+    </product>
+</products>
