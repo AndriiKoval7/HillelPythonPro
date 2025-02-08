@@ -1,0 +1,38 @@
+USERS = []
+
+class UserManager:
+    """
+    Class for managing User with Name and Age
+    """
+    def __init__(self) -> None:
+        pass
+
+    def add_user(self, name: str, age: int):
+        """
+        adding user
+        :param name:
+        :param age:
+        :return None:
+        """
+        if age <= 0:
+            print("Age must be integer!")
+            age = 0
+        USERS.append({"Name": name, "Age": age})
+
+    def remove_user(self, name: str):
+        for d in USERS:
+            if d.get('Name') == name:
+                USERS.remove(d)
+
+    def get_all_users(self) -> list:
+        return USERS
+
+
+um1 = UserManager
+um1.add_user(um1, name="John", age=30)
+um1.add_user(um1, name="Sofi", age=20)
+um1.add_user(um1, name="Kate", age=25)
+um1.add_user(um1, name="Sebastian", age=35)
+print(um1.get_all_users(um1))
+um1.remove_user(um1, name="Kate")
+print(um1.get_all_users(um1))
